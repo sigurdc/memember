@@ -35,5 +35,11 @@ namespace Memember.Web.Controllers
             })
             .ToArray();
         }
+
+        [HttpGet("ping")]
+        public IActionResult Ping()
+        {
+            return Ok("API running");
+        }
     }
 }
